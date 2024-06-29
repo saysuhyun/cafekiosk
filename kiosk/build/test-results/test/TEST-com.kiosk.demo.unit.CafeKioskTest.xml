@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kiosk.demo.unit.CafeKioskTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-24T15:17:30" hostname="suhyunucBookAir" time="0.031">
+<testsuite name="com.kiosk.demo.unit.CafeKioskTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-29T07:18:07" hostname="suhyunui-MacBookAir.local" time="0.035">
   <properties/>
-  <testcase name="createOrderOutsideOpenTime()" classname="com.kiosk.demo.unit.CafeKioskTest" time="0.031"/>
+  <testcase name="음료 1개 추가 테스트" classname="com.kiosk.demo.unit.CafeKioskTest" time="0.035"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
