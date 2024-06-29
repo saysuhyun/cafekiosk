@@ -3,6 +3,7 @@ package com.kiosk.demo.unit;
 import com.kiosk.demo.unit.beverages.Americano;
 import com.kiosk.demo.unit.beverages.Latte;
 import com.kiosk.demo.unit.order.Order;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
@@ -24,6 +25,7 @@ class CafeKioskTest {
 
     }
 
+    @DisplayName("음료 1개 추가하면 주문 목록에 담긴다") // 테스트명을 적어준다
     @Test
     void add(){
         CafeKiosk cafeKiosk = new CafeKiosk();
@@ -82,8 +84,11 @@ class CafeKioskTest {
 
     }
 
+    @DisplayName("주문 목록에 담긴 상품들의 총 금액을 계산할 수 있다.")
     @Test
     void calculateTotalPrice(){
+
+        //given
         CafeKiosk cafeKiosk = new CafeKiosk();
         Americano americano = new Americano();
         Latte latte = new Latte();
@@ -91,10 +96,11 @@ class CafeKioskTest {
         cafeKiosk.add(americano);
         cafeKiosk.add(latte);
 
+        // when : 보통 when은 한 줄인 경우가 많다
         int totalPrice = cafeKiosk.calculateTotalPrice();
 
+        // then
         assertThat(totalPrice).isEqualTo(8500);
-
     }
 
     @Test
